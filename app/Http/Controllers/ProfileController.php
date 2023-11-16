@@ -24,6 +24,10 @@ class ProfileController extends Controller
     $domain=$_SERVER["SERVER_NAME"];
     $secure=false;
     $httpOnly=true;
+<<<<<<< HEAD
+=======
+    
+>>>>>>> bc9a9910e6aef81b3d61e9cb46a764f25144618b
 
     $response=response()->json($data,200)->cookie(
         $name ,$value , $minutes, $path ,$domain ,$secure , $httpOnly
