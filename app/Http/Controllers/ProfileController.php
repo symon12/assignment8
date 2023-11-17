@@ -25,7 +25,7 @@ class ProfileController extends Controller
     $httpOnly=true;
 
 
-    $response=response($data,202)->cookie(
+    $response=response($data,200)->cookie(
         $name ,$value , $minutes, $path ,$domain ,$secure , $httpOnly
     );
     return $response;
