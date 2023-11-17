@@ -36,4 +36,21 @@ $id (required)->id;
    - Secure: No
    - HTTP Only: Yes
 
+   # Usage
 
+   ## Route
+   - Endpoint: /profile/{id}
+   - Method: GET
+
+   - Example Request
+
+   ```
+   GET /profile/123
+
+   ```
+
+
+
+
+
+ 
