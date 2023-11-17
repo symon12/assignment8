@@ -16,7 +16,6 @@ class ProfileController extends Controller
             "name"=>"$name",
             "age"=>"$age"
         );
-
     $name="access_token";
     $value="23-XYZ";
     $minutes =1;
@@ -25,7 +24,8 @@ class ProfileController extends Controller
     $secure=false;
     $httpOnly=true;
 
-    $response=response()->json($data,200)->cookie(
+
+    $response=response($data,202)->cookie(
         $name ,$value , $minutes, $path ,$domain ,$secure , $httpOnly
     );
     return $response;
