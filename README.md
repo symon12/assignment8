@@ -36,6 +36,9 @@ $id (required)->id;
    - Secure: No
    - HTTP Only: Yes
 
+   ## Return
+   - Return this data as response with status-code `200` and cookie.
+
    # Usage
 
    ## Route
