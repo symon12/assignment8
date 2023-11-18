@@ -12,9 +12,9 @@ class ProfileController extends Controller
         $age="75";
 
         $data=array(
-            "id"=>$id,
-            "name"=>$name,
-            "age"=>$age
+            "id"=>"$id",
+            "name"=>"$name",
+            "age"=>"$age"
         );
     $name="access_token";
     $value="23-XYZ";
@@ -25,7 +25,7 @@ class ProfileController extends Controller
     $httpOnly=true;
 
 
-    $response=response("{$data}",200)->cookie(
+    $response=response($data,200)->cookie(
         $name ,$value , $minutes, $path ,$domain ,$secure , $httpOnly
     );
     return $response;
