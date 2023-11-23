@@ -7,6 +7,7 @@ use Illuminate\Routing\Controller;
 class ProfileController extends Controller
 {
    public function index(Request $request){
+
         $id=$request->id;
         $name="Donal Trump";
         $age="75";
@@ -28,10 +29,11 @@ class ProfileController extends Controller
     $response=response($data,200)->cookie(
         $name ,$value , $minutes, $path ,$domain ,$secure , $httpOnly
     );
-    return $response;
+    return $request->header('User-Agent');
     }
    
 
-   
-}
+    }
+
+
 
